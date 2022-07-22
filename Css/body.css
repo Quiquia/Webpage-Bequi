@@ -1,0 +1,166 @@
+.navbar {
+  position: fixed;
+  background: var(--background-nav);
+  top: 0;
+  width: 100vw;
+  height: 60px;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+.navbar-list > li {
+  padding: 1rem;
+}
+
+.navbar-list a {
+  color: var(--color-text);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-list > li:hover {
+  background-color: #dff6f5;
+}
+
+@media (min-width: 600px) {
+  .navbar-list {
+    justify-content: flex-end;
+    margin-right: 2rem;
+  }
+}
+
+.welcome-section {
+  color: #fff;
+  background: #1e8a86;
+  text-align: center;
+  font-size: 2rem;
+
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-section {
+  background: #183151;
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+
+.project-tile {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  font-size: 2.5rem;
+}
+
+.project {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  height: calc(100% - 5rem);
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.project p {
+  background-color: #000;
+  border-radius: 0 0 5px 5px;
+  color: #fff;
+  font-size: 0.8rem;
+  margin: 0 auto 2rem auto;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+@media (min-width: 450px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  h2 {
+    font-size: 3rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .project-image {
+    height: calc(100vh / 2);
+  }
+  .project p {
+    font-size: 1.5rem;
+  }
+}
+
+.contact-section {
+  text-align: center;
+  background: #1e8a86;
+  color: #fff;
+  height: 80vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-title {
+  font-size: 1.8rem;
+}
+
+.contact-icon a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  max-width: 980px;
+  padding: 1rem;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.contact-icon a:hover {
+  transform: translateY(10px);
+}
+
+.contact-icon a {
+  transition: transform 0.5s ease-out;
+}
+
+@media (min-width: 800px) {
+  .contact-title {
+    font-size: 2.5rem;
+  }
+  .contact-icon a {
+    font-size: 2.4rem;
+  }
+}
+footer {
+  background: #1e8a86;
+  border-top: 2px solid #183151;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+}

@@ -1,0 +1,29 @@
+:root {
+  --background-head: #f0ffff;
+  --background-card: #afeeee;
+  --background-container: #05635f;
+  --background-nav: #84d0cd;
+  --color-nav: #84d0cd;
+  --color-text: #000;
+  --color-submit: #ffd700;
+  --color-icon: #cc0000;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--color-text);
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.6;
+  margin: 0;
+}
